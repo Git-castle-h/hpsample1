@@ -19,12 +19,12 @@ function Header(){
             <div className="subHeader" onMouseEnter={subMenuDown} onMouseLeave={subMenuLeave}>
                 <div className="leftMenuWrap">
                     <ul>
-                        <li><a href="login" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu1_ico.png'} alt="" /><span>My 페이지</span></a></li>
-                        <li><a href="subpage" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu2_ico.png'} alt="" /><span>취업교육 동영상</span></a></li>
-                        <li><a href="subpage" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu3_ico.png'}alt="" /><span>Job Tube</span></a></li>
-                        <li><a href="subpage" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu4_ico.png'} alt="" /><span>선배들의 코칭사례</span></a></li>
-                        <li><a href="subpage" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu5_ico.png'} alt="" /><span>서비스 안내</span></a></li>
-                        <li><a href="login" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu6_ico.png'} alt="" /><span>로그인</span></a></li>
+                        <li><a href="hpsample1/login" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu1_ico.png'} alt="" /><span>My 페이지</span></a></li>
+                        <li><a href="hpsample1/subpage" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu2_ico.png'} alt="" /><span>취업교육 동영상</span></a></li>
+                        <li><a href="hpsample1/subpage" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu3_ico.png'}alt="" /><span>Job Tube</span></a></li>
+                        <li><a href="hpsample1/subpage" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu4_ico.png'} alt="" /><span>선배들의 코칭사례</span></a></li>
+                        <li><a href="hpsample1/subpage" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu5_ico.png'} alt="" /><span>서비스 안내</span></a></li>
+                        <li><a href="hpsample1/login" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu6_ico.png'} alt="" /><span>로그인</span></a></li>
                     </ul>
                 </div>
             </div>
