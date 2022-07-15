@@ -18,7 +18,7 @@ import './css/login.css';
 function App() {
   return (
     <div className="App">    
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path ='/hpsample1'>
           <Route path ='' element={<MainPage></MainPage>}></Route>
