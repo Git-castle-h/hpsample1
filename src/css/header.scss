@@ -83,7 +83,7 @@
                     font-weight: 600;
                     font-size: 0.85em;
                     white-space: nowrap;
-                    a{
+                    button{
                         display: flex;
                         justify-content: flex-start; 
                         align-items: center;
@@ -117,14 +117,14 @@
             
             ul{
                 li{
-                    a{
+                    button{
                         span{
                             opacity: 1;
                             color:#fff;
                             transition: color 0.3s;
                         }
                     }
-                    a:hover{
+                    button:hover{
                         span{
                             color:#ffd54f;
                         }

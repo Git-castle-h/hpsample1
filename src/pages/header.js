@@ -1,14 +1,15 @@
 import {useState, useEffect} from 'react';
-
+import {useNavigate} from 'react-router-dom';
 
 function Header(){
+let navigate = useNavigate();
     return(
         <div className="header on">
             <header className="topHeader">
                 <div className="logoWrap">
-                    <a href="/" className="">
+                    <button onClick={()=>{navigate('/')}} className="">
                         <img src={`${process.env.PUBLIC_URL}/images/common/main_logo.png`} alt="학교로고" />
-                    </a>
+                    </button>
                 </div>
                 <div className="hamburgerWrap">
                     <div onClick={menuClick} className="center">
@@ -19,12 +20,12 @@ function Header(){
             <div className="subHeader" onMouseEnter={subMenuDown} onMouseLeave={subMenuLeave}>
                 <div className="leftMenuWrap">
                     <ul>
-                        <li><a href="login" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu1_ico.png'} alt="" /><span>My 페이지</span></a></li>
-                        <li><a href="subpage" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu2_ico.png'} alt="" /><span>취업교육 동영상</span></a></li>
-                        <li><a href="subpage" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu3_ico.png'}alt="" /><span>Job Tube</span></a></li>
-                        <li><a href="subpage" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu4_ico.png'} alt="" /><span>선배들의 코칭사례</span></a></li>
-                        <li><a href="subpage" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu5_ico.png'} alt="" /><span>서비스 안내</span></a></li>
-                        <li><a href="login" onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu6_ico.png'} alt="" /><span>로그인</span></a></li>
+                        <li><button onClick={()=>{navigate('/login')}} onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu1_ico.png'} alt="" /><span>My 페이지</span></button></li>
+                        <li><button onClick={()=>{navigate('/subpage')}} onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu2_ico.png'} alt="" /><span>취업교육 동영상</span></button></li>
+                        <li><button onClick={()=>{navigate('/subpage')}} onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu3_ico.png'}alt="" /><span>Job Tube</span></button></li>
+                        <li><button onClick={()=>{navigate('/subpage')}} onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu4_ico.png'} alt="" /><span>선배들의 코칭사례</span></button></li>
+                        <li><button onClick={()=>{navigate('/subpage')}} onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu5_ico.png'} alt="" /><span>서비스 안내</span></button></li>
+                        <li><button onClick={()=>{navigate('/login')}} onFocus={subMenuDown} onBlur={subMenuLeave}><img src={process.env.PUBLIC_URL+'/images/common/menu6_ico.png'} alt="" /><span>로그인</span></button></li>
                     </ul>
                 </div>
             </div>

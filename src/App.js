@@ -20,7 +20,7 @@ function App() {
     <div className="App">    
       <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path ='/hpsample1'>
+        <Route path ='/'>
           <Route path ='' element={<MainPage></MainPage>}></Route>
           <Route path ='subpage' element={<SubPage></SubPage>}></Route>
           <Route path ='login' element={<LoginPage></LoginPage>}></Route>

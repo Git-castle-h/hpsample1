@@ -81,15 +81,15 @@
   font-size: 0.85em;
   white-space: nowrap;
 }
-.header .subHeader ul li a {
+.header .subHeader ul li button {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.header .subHeader ul li a img {
+.header .subHeader ul li button img {
   margin-right: 0.7em;
 }
-.header .subHeader ul li a span {
+.header .subHeader ul li button span {
   opacity: 0;
   color: #fff;
   transition: opacity 0.3s;
@@ -98,12 +98,12 @@
 .header .subHeader.on {
   width: 220px;
 }
-.header .subHeader.on ul li a span {
+.header .subHeader.on ul li button span {
   opacity: 1;
   color: #fff;
   transition: color 0.3s;
 }
-.header .subHeader.on ul li a:hover span {
+.header .subHeader.on ul li button:hover span {
   color: #ffd54f;
 }
 .header .subHeader:focus {
